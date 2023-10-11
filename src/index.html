@@ -1,144 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshCart</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
+
 <body>
     <div class="container mx-auto">
         <!-- icon search  -->
-    <div class="flex items-center justify-between mt-4 mb-5">
-        <div>
-            <img src="https://freshcart.codescandy.com/assets/images/logo/freshcart-logo.svg" alt="">
-        </div>
-        <div>
-            <div class="flex items-center ">
-                
+        <div class="flex items-center justify-between mt-4 mb-5">
+            <div>
+                <img src="https://freshcart.codescandy.com/assets/images/logo/freshcart-logo.svg" alt="">
+            </div>
+            <div>
+                <div class="flex items-center ">
+
                     <label for="default-search" class="mb-2 text-sm font-medium  sr-only ">Search</label>
                     <div class="relative me-3 w-[500px]">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
-                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                             </svg>
                         </div>
-                        <input type="search" id="default-search" class="focus:outline-none focus:ring-green-200 focus:ring-4  block w-full p-4 pl-10 text-sm border rounded-lg " placeholder="Search for products" required>
-                        
+                        <input type="search" id="default-search"
+                            class="focus:outline-none focus:ring-green-200 focus:ring-4  block w-full p-4 pl-10 text-sm border rounded-lg "
+                            placeholder="Search for products" required>
+
                     </div>
-                
-                      
-                
-                
-                <button class="p-4 text-sm border rounded-lg flex items-center text-stone-400">
+
+
+
+
+                    <button class="p-4 text-sm border rounded-lg flex items-center text-stone-400">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4 me-3">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+
+                        </span>Location
+                    </button>
+                </div>
+            </div>
+            <div class="flex ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 me-3 text-slate-500">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 me-3 text-slate-500">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 me-3 text-slate-500">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+
+
+            </div>
+        </div>
+
+        <!-- nav bar  -->
+        <div class="flex items-center mb-5">
+            <button class="flex p-2 px-5 bg-primary items-center rounded-lg  text-neutral-100  hover:bg-green-600">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-grid me-3">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                </div>
+                <div>All Departments</div>
+
+            </button>
+            <div class="flex items-center">
+
+                <div class="flex items-center ">
+                    <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Home</a></span>
                     <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 me-3">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                          </svg>
-                          
-                    </span>Location
-                </button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="flex items-center ">
+                    <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Shop</a></span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="flex items-center ">
+                    <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Stores</a></span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="flex items-center ">
+                    <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Mega Menu</a></span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="flex items-center ">
+                    <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Pages</a></span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="flex items-center ">
+                    <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Accounts</a></span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </div>
+
+
+                <div class="me-2 ms-4 text-sm text-stone-600 hover:text-primary">
+                    <a href="">Dashboard</a>
+                </div>
+                <div class="me-2 ms-4 text-sm text-stone-600 hover:text-primary">
+                    <a href="">Docs</a>
+                </div>
+
             </div>
         </div>
-        <div class="flex ">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 me-3 text-slate-500">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 me-3 text-slate-500">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 me-3 text-slate-500">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-              </svg>
-              
-              
+
+        <hr>
+
+        <div>
+            <div style="background-image: url(../image/hero_section.jpg); "
+                class=" w-full  bg-cover h-[500px] rounded-lg  object-fill ">
+
+                <div class=" px-16 py-24 ">
+
+                    <div class=" ">
+                        <div class="mb-5">
+                            <div class=" text-xs bg-yellow-300 inline-block px-1 rounded-md font-bold">Opening Sale
+                                Discount
+                                50%
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <h1 class=" text-slate-900 text-5xl font-bold">SuperMarket For <br> Fresh Grocery</h1>
+                        </div>
+                        <div class="mb-5">
+                            <div class=" text-lg text-gray-700">Introduced a new model for online grocey shopping <br>
+                                and
+                                convenient home
+                                delivary</div>
+
+                        </div>
+                        <div class=" ">
+                            <button class=" flex items-center px-3 py-2 bg-black rounded-lg  text-white">Shop Now <span
+                                    class="ms-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </span> </button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-    </div>
-
-    <!-- nav bar  -->
-    <div class="flex items-center">
-        <button class="flex p-2 px-5 bg-primary items-center rounded-lg  text-neutral-100  hover:bg-green-600">
-            <div >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-grid me-3">
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
-            </svg>
-            </div >
-        <div>All Departments</div>
-
-        </button>
-        <div class="flex items-center">
-
-            <div class="flex items-center ">
-                <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Home</a></span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                </span>
-            </div>
-
-            <div class="flex items-center ">
-                <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Shop</a></span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                </span>
-            </div>
-
-            <div class="flex items-center ">
-                <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Stores</a></span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                </span>
-            </div>
-
-            <div class="flex items-center ">
-                <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Mega Menu</a></span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                </span>
-            </div>
-
-            <div class="flex items-center ">
-                <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Pages</a></span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                </span>
-            </div>
-            
-            <div class="flex items-center ">
-                <span class="me-2 ms-4 text-sm text-stone-600 hover:text-primary"><a href="">Accounts</a></span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                </span>
-            </div>
-
-            
-            <div class="me-2 ms-4 text-sm text-stone-600 hover:text-primary">
-                <a href="">Dashboard</a>
-            </div>
-            <div class="me-2 ms-4 text-sm text-stone-600 hover:text-primary">
-                <a href="">Docs</a>
-            </div>
-
-        </div>
-    </div>
 
     </div>
+
+
+
+
+
+
+
 </body>
+<script src="./app.js"></script>
+
 </html>
